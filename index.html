@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Bootsrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+<body>
+    <header align="center">
+        <h1 class="text-light">CALCULATOR</h1>
+    </header>
+<div class="container">
+
+    <div align="center">
+        <input  class="form-control input-sm text-dark">
+    </div>
+
+    <div align="center">
+        <!-- The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.
+        The data-* attribute consist of two parts:
+        1> The attribute name should not contain any uppercase letters, and must be at least one character long 
+        after the prefix "data-".
+        2> The attribute value can be any string -->
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="7">7</button>
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="8">8</button>
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="9">9</button>
+        <button class="btn btn-lg btn-outline-success btn-act">Clear</button> 
+    </div>
+
+    <div align="center">
+        <button class="btn btn-lg btn-num btn-outline-light" data-val="4">4</button>
+        <button class="btn btn-lg btn-num btn-outline-light" data-val="5">5</button>
+        <button class="btn btn-lg btn-num btn-outline-light" data-val="6">6</button>
+        <button class="btn btn-lg btn-outline-light btn-act" data-val=" / ">&divide;</button> 
+    </div>
+
+      <div align="center">
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="1">1</button>
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="2">2</button>
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="3">3</button>
+        <button class="btn btn-lg btn-outline-light btn-act" data-val=" + ">+</button> 
+    </div>
+
+    <div align="center">
+        <button class="btn btn-lg btn-outline-light btn-act" data-val=" x ">&times;</button>
+        <button class="btn btn-lg btn-outline-light btn-num" data-val="0">0</button>
+        <button class="btn btn-lg btn-outline-light btn-act" data-val=" - ">-</button>
+        <button class="btn btn-lg btn-outline-warning btn-act">=</button> 
+    </div>
+
+    </div>
+</div>
+
+<!-- Jquey CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
